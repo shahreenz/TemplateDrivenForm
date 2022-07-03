@@ -1,24 +1,10 @@
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Component, VERSION } from '@angular/core';
 
-
-import { AppComponent } from './app.component';
-
-@NgModule({
-bootstrap: [
-	AppComponent
-],
-declarations: [
-	AppComponent
-],
-imports: [
-	FormsModule,
-	BrowserModule,
-	BrowserAnimationsModule,
-	
-]
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: [ './app.component.css' ]
 })
-export class AppModule { }
-
+export class AppComponent  {
+  name = 'Angular ' + VERSION.major;
+}
