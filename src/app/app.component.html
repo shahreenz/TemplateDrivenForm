@@ -1,0 +1,7 @@
+<form #gfgform = "ngForm">
+{{ gfgform.value | json }}
+<br>
+<br>
+Name: <input type="text" name = 'name' ngModel #name = "ngModel" >
+Email: <input type="email" name = 'email' ngModel>
+</form>
